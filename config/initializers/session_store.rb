@@ -5,11 +5,10 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 
-# Note: make sure you have keys in config/config.yml
-ActionController::Base.session = {
-  :key => AppConfig.session_key,
-  :secret => AppConfig.session_secret
-}
+# Note: make sure you have key
+
+ActionController::Base.session = { :key => "asdasdasd", :secret => "some secretasdasd phrase" }
+
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
