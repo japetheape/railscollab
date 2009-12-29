@@ -7,7 +7,7 @@
 
 # Note: make sure you have key
 
-ActionController::Base.session = { :key => "asdasdasd", :secret => "some secretasdasd phrase" }
+ActionController::Base.session = { :key => "asdasdasd", :secret => "some secretasdasd phrasesome secretasdasd phrasesome secretasdasd phrasesome secretasdasd phrase" }
 
 
 # Use the database for sessions instead of the cookie-based default,
