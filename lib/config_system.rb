@@ -126,10 +126,10 @@ module ConfigSystem
     
     # ActionMailer stuff
     begin
-      ActionMailer::Base.delivery_method                 = AppConfig.notification_email_method.to_sym
-      ActionMailer::Base.smtp_settings                   = AppConfig.notification_email_smtp.symbolize_keys.delete_if{ |key, value| value.nil? or value.empty? }
-      ActionMailer::Base.smtp_settings[:authentication] = ActionMailer::Base.smtp_settings[:authentication].to_sym
-      ActionMailer::Base.sendmail_settings               = AppConfig.notification_email_sendmail
+  #    ActionMailer::Base.delivery_method                 = AppConfig.notification_email_method.to_sym
+  #    ActionMailer::Base.smtp_settings                   = AppConfig.notification_email_smtp.symbolize_keys.delete_if{ |key, value| value.nil? or value.empty? }
+  #    ActionMailer::Base.smtp_settings[:authentication] = ActionMailer::Base.smtp_settings[:authentication].to_sym
+  #    ActionMailer::Base.sendmail_settings               = AppConfig.notification_email_sendmail
     rescue Exception
     end
     
